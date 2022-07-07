@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
     <title>Rocket Links</title>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body class="dark-pink">
+  <body>
   
     <div class="container">
   
@@ -22,37 +23,63 @@
       <h1>Gregório Francisco</h1>
       <p class="username">@gregoriofrancisco99</p>
       
-      <ul>
+      <ul class="links-list">
         <li>
-          <a href="facebook.com" target="_blank">
+          <a href="https://facebook.com/gregoriofrancisco99/" target="_blank">
             <i class="fa fa-facebook-square"></i>
             Facebook
           </a>
         </li>
         <li>
-          <a href="youtube.com" target="_blank">
-            <i class="fa fa-youtube-square"></i>
-            Youtube
-          </a>
-        </li>
-        <li>
-          <a href="Linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/gregoriofrancisco99/" target="_blank">
             <i class="fa fa-linkedin-square"></i>
             LinkedIn
           </a>
         </li>
         <li>
-          <a href="github.com" target="_blank">
+          <a href="https://www.messenger.com/t/" target="_blank">
+            <i class="fa fa-facebook-messenger"></i>
+            Messenger
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/gregoriofrancisco99" target="_blank">
             <i class="fa fa-github-square"></i>
             Github
           </a>
         </li>
       </ul>
       
-      <footer>
-        Feito com <i class="fa fa-heart" style="color:red;"></i> por 
-        <a href="#" target="_blank">Marchian</a>
-      </footer>
+
     </div>
+    <footer>
+      <div id="color-pallete">
+        <ul class="themeList colors">
+          <li class="standard color" title="Padrão">SD</li>
+          <li class="darkBlue color" title="Azul escuro">DB</li>
+          <li class="pink color" title="Rosa">LP</li>
+          <li class="darkPink color" title="Rosa escuro">DP</li>
+        </ul>
+      </div>
+      <p>Feito com <i class="fa fa-heart" style="color:red;"></i> 
+      por <a href="#" target="_blank">Marchian</a></p>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        $('.color.darkBlue').click(function () {
+          $('body').removeClass().addClass('darkBlue');
+        });
+        $('.color.darkPink').click(function () {
+          $('body').removeClass().addClass('darkPink');
+        });
+        $('.color.pink').click(function () {
+          $('body').removeClass().addClass('pink');
+        });
+        $('.color.standard').click(function () {
+          $('body').removeClass();
+        });
+
+      });
+    </script>
   </body>
 </html>
